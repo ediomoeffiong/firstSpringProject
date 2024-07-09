@@ -14,9 +14,21 @@ public class restController {
         return "Hello World!";
     }
 
-    @Value("$(coach.name)")
+    /*@Value("$(coach.name)")
     private String coachName;
 
     @Value("$(team.name)")
-    private String teamName;
+    private String teamName;*/
+
+    // expose a new endpoint for "workout"
+    @GetMapping("/workout")
+    public String getDailyWorkout() {
+        return "Run a hard 5k!";
+    }
+
+    // expose a new endpoint for "fortune"
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "Today is your lucky day.";
+    }
 }
