@@ -30,19 +30,29 @@
 		<java.version>22</java.version>
 	</properties>
 	<dependencies>
+		<!--Adds support for spring boot web-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
+		<!--Adds support for spring boot developer tools (also helps with the reload function)-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
+		<!--Adds support for spring boot actuator-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<!--Adds security-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 
 		<dependency>
