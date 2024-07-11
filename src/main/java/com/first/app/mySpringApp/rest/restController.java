@@ -8,17 +8,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class restController {
 
     // expose "/" that return "Hello World"
-
     @GetMapping("/")
     public String sayHello() {
         return "Hello World!";
     }
 
-    /*@Value("$(coach.name)")
+    @Value("${coach.name}")
     private String coachName;
 
-    @Value("$(team.name)")
-    private String teamName;*/
+    @Value("${team.name}")
+    private String teamName;
+
+    // exposing endpoint for team info
+    @GetMapping("/team")
+    public String getTeamInfo() {
+        return "The coach is  " + coachName + ", and the team is " + teamName;
+    }
 
     // expose a new endpoint for "workout"
     @GetMapping("/workout")
