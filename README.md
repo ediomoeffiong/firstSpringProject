@@ -16,4 +16,4 @@ These dependencies can be gotten from [start.spring.io](https://start.spring.io)
 
 #### What does this project do?
 
-It's just a beginner project that contains changing point, implementing endpoints, and using annotations such as GetMapping, RestController, and Value.
+It's just a beginner project that contains changing ports, implementing endpoints, and using annotations such as GetMapping, RestController, and Value.
